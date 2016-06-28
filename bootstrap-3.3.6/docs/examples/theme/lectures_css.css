@@ -1,0 +1,36 @@
+/*Lecture page - CSS*/
+.panel-group .panel {
+    border-radius: 7px;
+    box-shadow: none;
+    border-color: #EEEEEE;
+}
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #333333;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE;
+}
+.panel-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+.more-less {
+    float: right;
+    color: #212121;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+}
+
+figure{
+    margin: 0px auto;
+    display:block;
+    text-align: center;
+    padding-bottom: 20px;
+}

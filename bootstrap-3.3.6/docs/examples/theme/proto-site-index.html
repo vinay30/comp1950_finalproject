@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="This site is a demonstration of what a future Comp 1950 site design could be. The content on this site is for testing purposes only, and the technology used on this site is continually being refined.">
+    <meta name="author" content="Vinay Punwani, Eiko Takeoka, David Lo">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Comp 1950 - Web Development and Design 2 Proto-site Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="navbarBrand" class="navbar-brand" href="#">BCIT: Comp 1950 Homepage</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+			<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notes <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Week 1 - Tools and Standards</a></li>
+                <li class="inactive"><a href="#">Week 2 - HTML5</a></li>
+                <li class="inactive"><a href="#">Week 3 - CSS Techniques</a></li>
+				<li class="inactive"><a href="#">Week 4 - CSS Layouts</a></li>
+				<li class="inactive"><a href="#">Week 5 - Responsive CSS</a></li>
+				<li class="inactive"><a href="#">Week 6 - CSS3</a></li>
+				<li class="inactive"><a href="#">Week 7 - JavaScript Frameworks</a></li>
+				<li class="inactive"><a href="#">Week 8 - Dynamic Content</a></li>
+				<li class="inactive"><a href="#">Week 9 - Templating, SEO</a></li>
+				<li class="inactive"><a href="#">Week 10 - Methodology</a></li>	
+                
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
+              <ul class="dropdown-menu">                
+				<li><a href="#">Course outline</a></li>
+				<li><a href="#">Course policies/grading</a></li>
+				<li><a href="#">Required Applications</a></li>
+				<li role="separator" class="divider"></li>
+                <li class="dropdown-header">Associated Sites</li>
+                <li><a href="#">BCIT Home</a></li>
+				<li><a href="#">my.BCIT.ca</a></li>
+                <li><a href="#">Comp 1950 Course Page</a></li>				
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Practice</li>
+                <li><a href="#">Exercises <span class="badge">4</span><span class="newContent"> NEW!</span></a></li>
+				<li><a href="#">Quizzes</a></li>
+                <li><a href="#">Exams</a></li>
+              </ul>
+            </li>
+			<li><a href="#about">Forums</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+          </ul>
+		  <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search notes">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1><span>Welcome</span></h1>
+        <p><span>Intermediate Web Design and Development at BCIT.</span></p>
+		<button id="latest_notes" type="button" class="btn btn-lg btn-info">Latest Notes</button>
+		<button id="latest_hw" type="button" class="btn btn-lg btn-primary">Latest Homework</button>
+      </div>
+
+
+      <header class="page-header">
+        <h1>Course Info</h1>
+      </header>
+		<div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Course Announcements</h3>
+            </div>
+            <div class="panel-body">
+              <p>This website is for BCIT students of the 12 week version of COMP 1950.</p>
+
+			<p>Check the <a href="http://www.bcit.ca/study/courses/comp1950">course
+			catalogue at BCIT</a> to see when this course is running next.</p>
+			<div class="alert alert-info" role="alert">
+			<p><strong>June 24th, 2016</strong></p>
+			<p>
+			Please note that coffee and snacks will be served at the final exam for your convenience.
+			</p>			
+			</div>
+			<div class="alert alert-info" role="alert">
+			<p><strong>June 20th, 2016</strong></p>
+			<p>
+			Attendance at class tonight is optional.
+			</p>			
+			</div>
+            </div>
+          </div>
+		  <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Course Description</h3>
+            </div>
+            <div class="panel-body">
+              <p><strong>COMP 1950</strong> follows on from <a href="http://www.bcit.ca/study/courses/comp1850">COMP 1850</a> in more depth and introduces new topics and techniques for developing effective web sites.</p>
+		<p>Students will gain a deeper understanding of HTML and CSS. Topics will include: Current and emerging trends in HTML, detailed use of CSS for layout and presentation, an introduction to JavaScript frameworks such as jQuery, how to leverage Server Side Includes (SSI) for re-usable code, and working with Content Management Systems.</p>
+
+<h3>Course goals</h3>
+<ul>
+	<li>To gain a deeper understanding of HTML, CSS and advanced topics in web development.</li>
+	<li>To focus on best practices in web page and web site design.</li>
+</ul>
+<h3>Course learning outcomes / competencies</h3>
+
+<p>Upon successful completion of this course, the student will be able to:</p>
+<ul>
+	<li>Deploy HTML5 and CSS3 effectively for new, old, and future web browsers.</li>
+	<li>Understand and apply concepts for Search Engine Optimized content (SEO).</li>
+	<li>Employ Web Standards when building web sites for maximum compatibility.</li>
+	<li>Create dynamic content using JavaScript frameworks like jQuery.</li>
+	<li>Implement Server Side techniques for efficient web development.</li>
+	<li>Create template-driven pages for use in Content Management systems.</li>
+	<li>Understand basic development methodology.</li>
+</ul>
+
+		
+            </div>
+          </div>  
+		  
+      
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

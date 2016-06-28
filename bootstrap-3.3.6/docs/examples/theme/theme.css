@@ -1,0 +1,94 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+nav {
+	text-transform: capitalize;
+	color: #262C3A;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.inactive {
+	opacity: 0.4;
+}
+
+.jumbotron {
+	background-image: url('images/css-home.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 500px;
+}
+
+.jumbotron h1 span {
+	color: #00DDD8;
+	background: #FFF;
+	padding: 0 10px;
+}
+
+.jumbotron p span {
+	color: #FF606E;
+	background: #FFF;
+	padding: 5px 5px;
+}
+
+.panel-warning > .panel-heading {
+	color: white;
+    background-image: linear-gradient(to bottom,#ff808a 0,#ff606e 100%);
+}
+
+.panel-info > .panel-heading {
+	color: white;
+    background-image: linear-gradient(to bottom,#8ba5c1 0,#517398 100%);
+}
+
+.newContent {
+	color: #ff606e;
+	font-weight: bold;
+}
+
+#navbarBrand {
+	font-size: 2em;
+	color: #262C3A;
+}
+
+#navbarBrand:hover {
+	color: #5b688b;
+}
+
+#navbar > ul > li > a {
+	transition: all 0.5s;
+}
+
+#navbar > ul > li > a:hover {
+	transform: translateY(10px);
+	transition: all 0.5s;
+}
+
+#latest_notes, #latest_hw {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+#navbar {
+	float: right;
+}
+
+@media print {
+	h1, h2, h3 {
+		page-break-before: always;
+	}
+}
