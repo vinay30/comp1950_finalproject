@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<title>COMP1950 - Quiz07</title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	
+		<!-- flipclock meta data -->
+		<link rel="stylesheet" href="css/flipclock.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+		<script src="js/flipclock.js"></script>
+
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">COMP 1950: Intermediate Web Development and Design</a>
+				    </div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="clock" style="margin:2em;"></div>
+
+			<div id='time-message' class="message"></div>
+
+			<script type="text/javascript">
+				var clock;
+
+				$(document).ready(function() {
+
+					// Instantiate a counter
+					clock = new FlipClock($('.clock'), 60, {
+						clockFace: 'MinuteCounter',
+						autoStart: true,
+						countdown: true,
+						callbacks: {
+			        	stop: function() {
+			        		$('.message').html('Time is expired! Please submit.');
+			        		$('#textarea1').attr("disabled", "disabled");
+			        		$('#textarea2').attr("disabled", "disabled");
+			        		$('#textarea3').attr("disabled", "disabled");
+			        		$('#ans4a').attr("disabled", "disabled");
+			        		$('#ans4b').attr("disabled", "disabled");
+			        		$('#ans5a').attr("disabled", "disabled");
+			        		$('#ans5b').attr("disabled", "disabled");
+			        		$('#ans5c').attr("disabled", "disabled");
+			        		$('#ans5d').attr("disabled", "disabled");
+			        	}
+			        	}
+					});
+					
+				});
+			</script>
+
+			<h2>Quiz #7</h2>
+			
+			<form onsubmit='alert("Test Submitted.")'>
+				<div class="input-group input-group-lg ">
+				  <span class="input-group-addon" id="sizing-addon1">Name</span>
+				  <input id='input-name' type="text" class="form-control" placeholder="John Smith" aria-describedby="sizing-addon1" required autofocus="autofocus">
+				</div>
+				<div class="input-group input-group-lg ">
+				  <span class="input-group-addon" id="sizing-addon2">Student Number</span>
+				  <input type="text" class="form-control" placeholder="Axxxxxxxx" aria-describedby="sizing-addon1" required>
+				</div>
+
+				<p id='testinfo'>This quiz is to be done individually and is closed book</p>
+
+
+				<p>1.  Name one type of HTTP Server. (1 marks)</p>
+
+						<div class="form-group">
+						  <label for="textarea1">Answer:</label>
+						  <textarea id='textarea1' class="form-control" rows="2" ></textarea>
+						</div>
+				
+				<p>2.  What do the letters in the acronym <strong>WAMP</strong> stand for? (1 marks)</p>
+
+						<div class="form-group">
+						  <label for="textarea2">Answer:</label>
+						  <textarea id='textarea2' class="form-control" rows="2" ></textarea>
+						</div>				
+
+				<p>3.  One use of SSIs is to display the current date. Briefly describe one other case where a developer might use SSIs. (6 marks)</p>
+						<div class="form-group">
+						  <label for="textarea3">Answer:</label>
+						  <textarea id='textarea3' class="form-control" rows="10" ></textarea>
+						</div>
+
+				<p>4.  Server behavior can be customized using a file called .htaccess (1 mark)</p>
+						<div class="input-group">
+
+						      	<p>
+						      		<input id="ans4a" type="radio" name="question4" value="true">
+							    	<label for="ans4a">True</label>
+							    </p>
+							    <p>
+								    <input id="ans4b" type="radio" name="question4" value="false">
+								    <label for="ans4b">False</label>
+							    </p>
+						</div><!-- /input-group -->
+
+				<p>5.  Which of the following is an example of SSI code (1 mark)</p>
+					<div class="input-group">
+						      	<p>
+						      		<input id="ans5a" type="radio" name="question5" value="ans1">
+							    	<label for="ans5a">/* #echo var="DOCUMENT_NAME" */</label>
+							    </p>
+							    <p>
+								    <input id="ans5b" type="radio" name="question5" value="ans2">
+								    <label for="ans5b">&lt;!&ndash; &ndash;#echo var=&quot;DOCUMENT_NAME&quot;&ndash; &ndash;&gt; </label>
+							    </p>
+							    <p>
+								    <input id="ans5c" type="radio" name="question5" value="ans3">
+								    <label for="ans5c">{ #echo var=&quot;DOCUMENT_NAME&quot; }</label>
+							    </p>
+							    <p>
+								    <input id="ans5d" type="radio" name="question5" value="ans4">
+								    <label for="ans5d">&lt;ssi&gt; #echo var=&quot;DOCUMENT_NAME&quot;&lt;/ssi&gt;</label>
+							    </p>
+							    
+						</div><!-- /input-group -->
+				
+				
+					<input  class="btn-style" type="submit" name="btn" value="submit" />
+			</form>
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>			
+		</main>
+	</body>
+</html>
